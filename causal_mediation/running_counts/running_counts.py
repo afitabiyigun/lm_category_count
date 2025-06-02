@@ -1,5 +1,5 @@
 # %%
-from dataset import category_wordbank
+from dataset_creation.dataset import category_wordbank
 import json
 import os
 
