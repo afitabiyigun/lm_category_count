@@ -67,10 +67,12 @@ Initial activation extraction began:
 
 ### Planned Methodology: Next Steps
 
-**Train a Linear Probe for Running Count**
+**Train a Linear Probe for Running Count**:
+
 Detect whether intermediate representations in GPT-2 contain an explicit encoding of the running count of category-matching words.
 
-**Causal Mediation via Activation Patching**
+**Causal Mediation via Activation Patching**:
+
 Test whether specific hidden states cause the final token prediction to reflect the running count.
 
 Procedure:
@@ -82,7 +84,8 @@ Procedure:
 4. Output Comparison
 5. Repeat the patching over: layers, positions (focus on early/mid/late list tokens), and multiple examples.
 
-**Analyze Mediation Results**
+**Analyze Mediation Results**:
+
 Identify locations (layer × position) where hidden states mediate the count prediction.
 
 
