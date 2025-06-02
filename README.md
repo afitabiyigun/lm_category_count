@@ -77,8 +77,8 @@ Test whether specific hidden states cause the final token prediction to reflect 
 
 Procedure:
 1. Prompt Construction:
-  - Clean Prompt: Contains multiple category-matching items (e.g., 3 fruits).
-  - Corrupted Prompt: Replaces some matching items with distractors (e.g., 1 fruit).
+  - Clean Prompt: Contains multiple category-matching items.
+  - Corrupted Prompt: Replaces some matching items with distractors.
 2. Run Forward Passes: Collect clean and corrupted activations using the HookedTransformer cache.
 3. Patching Operation: Replace specific hidden states in the corrupted run with those from the clean run. Then run forward from that point using run_with_cache(patched_activations) or similar patching utilities in HookedTransformer.
 4. Output Comparison
